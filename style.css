@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -28,3 +29,20 @@ výchozí (=mobil) - 1 obrázek na řádku (tj. 12 obrázků pod sebou)
 širší než 800px  - 4 obrázky vedle sebe
 širší než 1000px - 6 obrázků vedle sebe
 */
+.foto {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .galerie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screnn and (max-width:500px) {}
